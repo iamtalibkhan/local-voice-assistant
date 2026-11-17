@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments & local env files
+.env
+.env.*
+!.env.example
+venv/
+ENV/
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+tmp/
+
+# SQLite Database & Session Memory (Contains private chat logs & transcripts)
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/*.sqlite*
+!data/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+
+# Model weights & large binaries (Kokoro, Whisper, etc.)
+models/**/*.onnx
+models/**/*.bin
+models/**/*.pt
+models/**/*.safetensors
+!models/**/.gitkeep
+
+# Temporary audio files
+*.wav
+*.mp3
+*.webm
+*.ogg
+*.flac
+*.m4a
+
+# IDE & OS clutter
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
